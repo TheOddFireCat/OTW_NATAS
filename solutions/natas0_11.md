@@ -49,5 +49,43 @@
   Appending `/robots.txt` to the URL brings us to that documents contents and we find a directory.
   <br><br>
   
-  Appending the directory to our URL greets us with a similar
+  Appending the directory to our URL greets us with a similar view to level 2, and we find the password to
+  level 4
 </details>
+
+## Level 4
+<details> 
+  <summary><b>Solution</b></summary>
+  
+  &nbsp;&nbsp;This time, there isn't anything in DevTools. We rely on the text provided on the page.<br><br>
+ 
+  The site expects us to come from the level ahead, level 5. that isn't possible however. <br>
+  So we instead use
+  one of these; 
+    <ol>
+      <li>Burpsuite</li>
+      <li>An extention to modiffy the referer</li>
+    </ol>
+  <br><br>
+
+  <details>
+    <summary><b>Burpsuite</b></summary>
+    &nbsp;&nbsp;Using the Intercept tab you can modify the request to the site and change the `Referer` header
+    to the URL it expects, and then send it over. I myself didn't use Burpsuite for this however.
+  </details>
+  <details>
+    <summary><b>Browser extension</b></summary>
+    &nbsp;&nbsp;I have found two extensions that work for this.
+    <ul>
+      <li>On Chrome: Referer Control</li>
+      <li>On Firefox: Referer Modifier</li>
+    </ul><br><br>
+    With Referer Control, you enter the URL of the site you want the Referer changed when you visit it, select
+    custom, and then what you want the Referer to be. <br>
+    With Referer Modifier, it's universal so you just put what you want the Referer to be.
+  </details>
+  
+  Reloading the page gives us the text with the password for level 5
+</details>
+
+## Levels 5 - 11 TBA
