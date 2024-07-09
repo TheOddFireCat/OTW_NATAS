@@ -66,8 +66,7 @@
       <li>Burpsuite</li>
       <li>An extention to modiffy the referer</li>
     </ol>
-  <br><br>
-
+  <br>
   <details>
     <summary><b>Burpsuite</b></summary>
     &nbsp;&nbsp;Using the Intercept tab you can modify the request to the site and change the `Referer` header
@@ -79,7 +78,7 @@
     <ul>
       <li>On Chrome: Referer Control</li>
       <li>On Firefox: Referer Modifier</li>
-    </ul><br><br>
+    </ul><br>
     With Referer Control, you enter the URL of the site you want the Referer changed when you visit it, select
     custom, and then what you want the Referer to be. <br>
     With Referer Modifier, it's universal so you just put what you want the Referer to be.
